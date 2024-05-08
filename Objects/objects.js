@@ -8,10 +8,19 @@ let emp = {
   payRate: 38.46
 };
 
+//Dot Notation is the most common way of accessing the property of an object.
 console.log(emp.employeeId);
 console.log(emp.name);
 console.log(emp.jobTitle);
 console.log(emp.payRate);
+
+console.log(" ");
+console.log(" ");
+
+console.log(emp["employeeId"]);
+console.log(emp["name"])
+console.log(emp["jobTitle"])
+console.log(emp["payRate"])
 
 console.log(" ");
 console.log(" ");
@@ -22,7 +31,7 @@ console.log(" ");
 console.log(" ");
 
 
-keys = Object.keys(emp)
+let keys = Object.keys(emp)
 for (k of keys) {
   console.log(k, ":", emp[k]);
 }

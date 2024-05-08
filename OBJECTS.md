@@ -1,11 +1,3 @@
-# Arrays and Objects
-
-
-## Array
-`a = []` is a list.
-
-
-
 ## Object
 `o = {}` has properties.
 for instance, `age:` 56, `key:` value
@@ -27,5 +19,10 @@ Many programming languages allow programmers to creat `"objects"` in their code.
   - {`name:` "Abel", `employeeId:` "1",}
 
 
-
+# Accessing Object Properties:
+* Ways to access a property:
+```
+ - objectName.propertyName
+ - objectName["propertyName"] 
+```
 
