@@ -13,3 +13,13 @@ const fruitCalories = fruits.map( fruit => fruit.calories)
 console.log(fruitNames);
 console.log(fruitColors);
 console.log(fruitCalories);
+
+// for(row of fruits){
+//   console.log(row);
+// }
+
+
+let row = fruitNames[1]
+for(row of fruits){
+  console.log(row[1]);
+}
