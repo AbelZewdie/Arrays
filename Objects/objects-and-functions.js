@@ -16,11 +16,18 @@ let abelCinema = {
 
 let ampereCinema = {
   employeeId: "12",
-  name: "Abel",
+  name: "Doyo",
   seatNumber: 21,
   cost: 35,
 }
 
 pringCustomerAndPay(abelCinema)
 pringCustomerAndPay(ampereCinema)
+console.log(" ");
+console.log(" ");
+console.log(" ");
 
+let keys = Object.keys(abelCinema)
+for(k of keys) {
+  console.log(k, ":", abelCinema[k]);
+}
