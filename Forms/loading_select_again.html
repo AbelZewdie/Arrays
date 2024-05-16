@@ -1,0 +1,29 @@
+<select name="statesList" id="statesList">
+</select>
+
+<script>
+
+  window.onload = function () {
+    //load the dropdown list,
+    let states = ["Bole", "Shola", "4 Kilo", "6 Kilo", "Selase"]
+    let abbrev = ["Bo", "Sh", "4K", "6K", "Sel"]
+
+    const statesList = document.getElementById("statesList");
+
+    for (let i = 0; i < states.length; i++) {
+
+      // create the option element,
+      let theOption = document.createElement("option");
+
+      //set the value and text of the option you created.
+      theOption.textContent = states[i];
+      theOption.value = abbrev[i];
+
+      //append the option as a child of (inside) the select element.
+      statesList.appendChild(theOption)
+
+    }
+    
+  }
+
+</script>

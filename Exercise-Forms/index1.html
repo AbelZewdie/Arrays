@@ -1,0 +1,31 @@
+<body>
+  
+<select name="teamsList" id="teamsList">
+
+</select>
+</body>
+<script>
+
+window.onload = function (){
+//load the dropdown list,
+let name = ["Dallas Cowboys", "Denver Broncos", "Houston Texans", "Kansas City Chiefs"];
+let code = ["DAL", "DEN", "HOU", "KAN"];
+
+const teamsList = document.getElementById("teamsList");
+
+for( let i = 0; i = name.length; i++){
+
+let theOption = document.createElement("option");
+
+theOption.textContent = name[i];
+theOption.value = code[i];
+
+teamsList.appendChild(theOption);
+
+}
+
+
+
+}
+  
+</script>
